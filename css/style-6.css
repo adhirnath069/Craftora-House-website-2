@@ -1,0 +1,9 @@
+#cx-bar{position:fixed;right:16px;bottom:16px;z-index:2147483647;display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 32px);padding:8px;border-radius:14px;background:#2f2a28;color:#fff;font:600 13px/1 system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.28)}
+#cx-bar button{all:unset;cursor:pointer;padding:9px 12px;border-radius:9px;background:#4a423f;color:#fff;font:600 13px/1 system-ui,sans-serif}
+#cx-bar button:hover{background:#625855}#cx-bar button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+#cx-bar button.cx-primary{background:#c8714f}#cx-bar .cx-only{display:none}
+#cx-bar.cx-on .cx-only{display:inline-block}#cx-msg{padding:0 6px;font-weight:500;opacity:.85;max-width:260px}
+body.cx-editing [data-cx-t]{outline:1px dashed rgba(200,113,79,.55);outline-offset:2px;cursor:text}
+body.cx-editing [data-cx-t]:focus{outline:2px solid #c8714f;background:rgba(200,113,79,.08)}
+body.cx-editing img.cx-hover{outline:3px solid #c8714f;outline-offset:-3px;cursor:pointer}
+@media print{#cx-bar{display:none}}

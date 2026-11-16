@@ -1,0 +1,10 @@
+#cx-theme,.cx-theme{all:unset;box-sizing:border-box;cursor:pointer;width:44px;height:44px;border-radius:50%;border:2px solid currentColor;display:inline-grid;place-items:center;color:var(--ink);flex:none;transition:transform .25s cubic-bezier(.34,1.56,.64,1),background-color .25s,color .25s}
+.cx-theme:hover{transform:rotate(15deg) scale(1.08);background:var(--ink);color:var(--cream)}
+.cx-theme:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+.cx-theme svg{width:22px;height:22px;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .25s}
+.cx-theme .sun{position:absolute;opacity:0;transform:rotate(-90deg) scale(.4)}
+:root[data-theme="dark"] .cx-theme .sun{opacity:1;transform:none}
+:root[data-theme="dark"] .cx-theme .moon{opacity:0;transform:rotate(90deg) scale(.4)}
+html.cx-theming,html.cx-theming *{transition:background-color .35s,color .35s,border-color .35s,fill .35s!important}
+:root[data-theme="dark"]{color-scheme:dark}
+@media (prefers-reduced-motion:reduce){.cx-theme,.cx-theme svg{transition:none}}
